@@ -1,0 +1,325 @@
+# Nmap 7.80 scan initiated Wed Feb 26 01:12:30 2020 as: nmap -iL outsideship.txt -p 445,3389,8009,22,138,139,6379,3306,1433 -oN outnetip202002261333sh.txt
+Failed to resolve "﻿118.89.147.32".
+Nmap scan report for 118.25.250.74
+Host is up (0.42s latency).
+
+PORT     STATE    SERVICE
+22/tcp   closed   ssh
+138/tcp  filtered netbios-dgm
+139/tcp  filtered netbios-ssn
+445/tcp  filtered microsoft-ds
+1433/tcp filtered ms-sql-s
+3306/tcp filtered mysql
+3389/tcp filtered ms-wbt-server
+6379/tcp filtered redis
+8009/tcp filtered ajp13
+
+Nmap scan report for 106.54.133.195
+Host is up (0.44s latency).
+
+PORT     STATE    SERVICE
+22/tcp   closed   ssh
+138/tcp  filtered netbios-dgm
+139/tcp  filtered netbios-ssn
+445/tcp  filtered microsoft-ds
+1433/tcp filtered ms-sql-s
+3306/tcp filtered mysql
+3389/tcp filtered ms-wbt-server
+6379/tcp filtered redis
+8009/tcp filtered ajp13
+
+Nmap scan report for 123.206.133.11
+Host is up (0.45s latency).
+
+PORT     STATE    SERVICE
+22/tcp   closed   ssh
+138/tcp  filtered netbios-dgm
+139/tcp  filtered netbios-ssn
+445/tcp  filtered microsoft-ds
+1433/tcp filtered ms-sql-s
+3306/tcp filtered mysql
+3389/tcp filtered ms-wbt-server
+6379/tcp filtered redis
+8009/tcp filtered ajp13
+
+Nmap scan report for 123.206.133.199
+Host is up (0.53s latency).
+
+PORT     STATE    SERVICE
+22/tcp   closed   ssh
+138/tcp  filtered netbios-dgm
+139/tcp  filtered netbios-ssn
+445/tcp  filtered microsoft-ds
+1433/tcp filtered ms-sql-s
+3306/tcp filtered mysql
+3389/tcp filtered ms-wbt-server
+6379/tcp filtered redis
+8009/tcp filtered ajp13
+
+Nmap scan report for 123.206.206.197
+Host is up (0.32s latency).
+
+PORT     STATE    SERVICE
+22/tcp   closed   ssh
+138/tcp  filtered netbios-dgm
+139/tcp  filtered netbios-ssn
+445/tcp  filtered microsoft-ds
+1433/tcp filtered ms-sql-s
+3306/tcp filtered mysql
+3389/tcp filtered ms-wbt-server
+6379/tcp filtered redis
+8009/tcp filtered ajp13
+
+Nmap scan report for 123.206.120.181
+Host is up (0.20s latency).
+
+PORT     STATE    SERVICE
+22/tcp   closed   ssh
+138/tcp  filtered netbios-dgm
+139/tcp  filtered netbios-ssn
+445/tcp  filtered microsoft-ds
+1433/tcp filtered ms-sql-s
+3306/tcp filtered mysql
+3389/tcp filtered ms-wbt-server
+6379/tcp filtered redis
+8009/tcp filtered ajp13
+
+Nmap scan report for 115.159.5.19
+Host is up (0.20s latency).
+
+PORT     STATE    SERVICE
+22/tcp   closed   ssh
+138/tcp  filtered netbios-dgm
+139/tcp  filtered netbios-ssn
+445/tcp  filtered microsoft-ds
+1433/tcp filtered ms-sql-s
+3306/tcp filtered mysql
+3389/tcp filtered ms-wbt-server
+6379/tcp filtered redis
+8009/tcp filtered ajp13
+
+Nmap scan report for 115.159.101.128
+Host is up (0.55s latency).
+
+PORT     STATE    SERVICE
+22/tcp   closed   ssh
+138/tcp  filtered netbios-dgm
+139/tcp  filtered netbios-ssn
+445/tcp  filtered microsoft-ds
+1433/tcp filtered ms-sql-s
+3306/tcp filtered mysql
+3389/tcp filtered ms-wbt-server
+6379/tcp filtered redis
+8009/tcp filtered ajp13
+
+Nmap scan report for 182.254.152.95
+Host is up (0.0018s latency).
+
+PORT     STATE    SERVICE
+22/tcp   filtered ssh
+138/tcp  filtered netbios-dgm
+139/tcp  filtered netbios-ssn
+445/tcp  filtered microsoft-ds
+1433/tcp filtered ms-sql-s
+3306/tcp filtered mysql
+3389/tcp filtered ms-wbt-server
+6379/tcp filtered redis
+8009/tcp filtered ajp13
+
+Nmap scan report for 182.254.135.125
+Host is up (0.44s latency).
+
+PORT     STATE    SERVICE
+22/tcp   closed   ssh
+138/tcp  filtered netbios-dgm
+139/tcp  filtered netbios-ssn
+445/tcp  filtered microsoft-ds
+1433/tcp filtered ms-sql-s
+3306/tcp filtered mysql
+3389/tcp filtered ms-wbt-server
+6379/tcp filtered redis
+8009/tcp filtered ajp13
+
+Nmap scan report for 115.159.58.70
+Host is up (0.20s latency).
+
+PORT     STATE    SERVICE
+22/tcp   closed   ssh
+138/tcp  filtered netbios-dgm
+139/tcp  filtered netbios-ssn
+445/tcp  filtered microsoft-ds
+1433/tcp filtered ms-sql-s
+3306/tcp filtered mysql
+3389/tcp filtered ms-wbt-server
+6379/tcp filtered redis
+8009/tcp filtered ajp13
+
+Nmap scan report for 123.206.206.19
+Host is up (0.20s latency).
+
+PORT     STATE    SERVICE
+22/tcp   closed   ssh
+138/tcp  filtered netbios-dgm
+139/tcp  filtered netbios-ssn
+445/tcp  filtered microsoft-ds
+1433/tcp filtered ms-sql-s
+3306/tcp filtered mysql
+3389/tcp filtered ms-wbt-server
+6379/tcp filtered redis
+8009/tcp filtered ajp13
+
+Nmap scan report for 115.159.6.147
+Host is up (0.53s latency).
+
+PORT     STATE    SERVICE
+22/tcp   closed   ssh
+138/tcp  filtered netbios-dgm
+139/tcp  filtered netbios-ssn
+445/tcp  filtered microsoft-ds
+1433/tcp filtered ms-sql-s
+3306/tcp filtered mysql
+3389/tcp filtered ms-wbt-server
+6379/tcp filtered redis
+8009/tcp filtered ajp13
+
+Nmap scan report for 123.206.188.181
+Host is up (0.056s latency).
+
+PORT     STATE    SERVICE
+22/tcp   open     ssh
+138/tcp  filtered netbios-dgm
+139/tcp  filtered netbios-ssn
+445/tcp  filtered microsoft-ds
+1433/tcp filtered ms-sql-s
+3306/tcp filtered mysql
+3389/tcp filtered ms-wbt-server
+6379/tcp filtered redis
+8009/tcp filtered ajp13
+
+Nmap scan report for 123.207.221.28
+Host is up (0.054s latency).
+
+PORT     STATE    SERVICE
+22/tcp   open     ssh
+138/tcp  filtered netbios-dgm
+139/tcp  filtered netbios-ssn
+445/tcp  filtered microsoft-ds
+1433/tcp filtered ms-sql-s
+3306/tcp filtered mysql
+3389/tcp filtered ms-wbt-server
+6379/tcp filtered redis
+8009/tcp filtered ajp13
+
+Nmap scan report for 118.89.146.204
+Host is up (0.41s latency).
+
+PORT     STATE    SERVICE
+22/tcp   closed   ssh
+138/tcp  filtered netbios-dgm
+139/tcp  filtered netbios-ssn
+445/tcp  filtered microsoft-ds
+1433/tcp filtered ms-sql-s
+3306/tcp filtered mysql
+3389/tcp filtered ms-wbt-server
+6379/tcp filtered redis
+8009/tcp filtered ajp13
+
+Nmap scan report for 182.254.136.97
+Host is up (0.20s latency).
+
+PORT     STATE    SERVICE
+22/tcp   closed   ssh
+138/tcp  filtered netbios-dgm
+139/tcp  filtered netbios-ssn
+445/tcp  filtered microsoft-ds
+1433/tcp filtered ms-sql-s
+3306/tcp filtered mysql
+3389/tcp filtered ms-wbt-server
+6379/tcp filtered redis
+8009/tcp filtered ajp13
+
+Nmap scan report for 115.159.108.102
+Host is up (0.45s latency).
+
+PORT     STATE    SERVICE
+22/tcp   closed   ssh
+138/tcp  filtered netbios-dgm
+139/tcp  filtered netbios-ssn
+445/tcp  filtered microsoft-ds
+1433/tcp filtered ms-sql-s
+3306/tcp filtered mysql
+3389/tcp filtered ms-wbt-server
+6379/tcp filtered redis
+8009/tcp filtered ajp13
+
+Nmap scan report for 115.159.102.75
+Host is up (0.44s latency).
+
+PORT     STATE    SERVICE
+22/tcp   closed   ssh
+138/tcp  filtered netbios-dgm
+139/tcp  filtered netbios-ssn
+445/tcp  filtered microsoft-ds
+1433/tcp filtered ms-sql-s
+3306/tcp filtered mysql
+3389/tcp filtered ms-wbt-server
+6379/tcp filtered redis
+8009/tcp filtered ajp13
+
+Nmap scan report for 115.159.122.39
+Host is up (0.019s latency).
+
+PORT     STATE    SERVICE
+22/tcp   open     ssh
+138/tcp  filtered netbios-dgm
+139/tcp  filtered netbios-ssn
+445/tcp  filtered microsoft-ds
+1433/tcp filtered ms-sql-s
+3306/tcp filtered mysql
+3389/tcp filtered ms-wbt-server
+6379/tcp filtered redis
+8009/tcp filtered ajp13
+
+Nmap scan report for 115.159.23.132
+Host is up (0.44s latency).
+
+PORT     STATE    SERVICE
+22/tcp   closed   ssh
+138/tcp  filtered netbios-dgm
+139/tcp  filtered netbios-ssn
+445/tcp  filtered microsoft-ds
+1433/tcp filtered ms-sql-s
+3306/tcp filtered mysql
+3389/tcp filtered ms-wbt-server
+6379/tcp filtered redis
+8009/tcp filtered ajp13
+
+Nmap scan report for 115.159.116.93
+Host is up (0.20s latency).
+
+PORT     STATE    SERVICE
+22/tcp   closed   ssh
+138/tcp  filtered netbios-dgm
+139/tcp  filtered netbios-ssn
+445/tcp  filtered microsoft-ds
+1433/tcp filtered ms-sql-s
+3306/tcp filtered mysql
+3389/tcp filtered ms-wbt-server
+6379/tcp filtered redis
+8009/tcp filtered ajp13
+
+Nmap scan report for 123.206.199.110
+Host is up (0.051s latency).
+
+PORT     STATE    SERVICE
+22/tcp   filtered ssh
+138/tcp  filtered netbios-dgm
+139/tcp  filtered netbios-ssn
+445/tcp  filtered microsoft-ds
+1433/tcp filtered ms-sql-s
+3306/tcp filtered mysql
+3389/tcp open     ms-wbt-server
+6379/tcp filtered redis
+8009/tcp filtered ajp13
+
+# Nmap done at Wed Feb 26 01:12:47 2020 -- 23 IP addresses (23 hosts up) scanned in 17.01 seconds
