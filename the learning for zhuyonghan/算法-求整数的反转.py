@@ -2,8 +2,6 @@
 #This program is designed for plus calculations.
 #!C:\Program Files\Python37
 
-
-
 def reverse(x):
     num = 0
     if x == 0:
