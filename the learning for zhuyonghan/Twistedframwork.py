@@ -6,4 +6,3 @@ from time import ctime
 PORT = 21568
 
 class TSServProtocol(protocl.Protocol):
-    

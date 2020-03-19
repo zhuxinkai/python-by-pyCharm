@@ -1,0 +1,5 @@
+10.1.16.3 vulnerable.
+10.1.16.3 vulnerable.
+10.1.16.3 vulnerable.
+10.1.16.3 Not vulnerable.
+10.1.16.3 Not vulnerable.
