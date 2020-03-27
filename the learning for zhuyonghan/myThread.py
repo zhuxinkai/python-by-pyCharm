@@ -17,8 +17,9 @@ class MyThread(threading.Thread):
     def getResult(self):
         return self.res
 
-# 工具类中世纪的执行方法
+# 工具类中实际的执行方法
     def run(self):
-        print 'starting', self.name,'at:',ctime()
+        print ('starting', self.name,'at:',ctime())
         self.res = self.func(*self.args)
-        print self.name,'finished at :' ,ctime()
+
+        print (self.name,'finished at :' ,ctime())

@@ -1,0 +1,14 @@
+10.1.15.3 Not vulnerable.
+10.1.15.5 Not vulnerable.
+10.1.15.20 Not vulnerable.
+10.1.15.27 Not vulnerable.
+10.1.15.38 Not vulnerable.
+10.1.15.49 vulnerable.
+10.1.15.57 Not vulnerable.
+10.1.15.69 Not vulnerable.
+10.1.15.106 Not vulnerable.
+10.1.15.110 Not vulnerable.
+10.1.15.208 Not vulnerable.
+10.1.15.221 Not vulnerable.
+10.1.15.235 vulnerable.
+10.1.15.245 Not vulnerable.

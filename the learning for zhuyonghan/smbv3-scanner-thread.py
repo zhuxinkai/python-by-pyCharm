@@ -7,7 +7,7 @@ import re
 #import Queue
 import requests
 import os
-
+from myThread import MyThread
 
 
 
@@ -22,6 +22,7 @@ subnet = '10.9.0.0/12'
 subnet2 = '10.1.15.0/24'
 
 subnetlist = ('10.233.0.0/21','10.8.24.0/24','10.8.25.0/24','10.8.21.0/24','10.8.23.0/24','10.8.22.0/24','10.8.26.0/24')
+subnetlistxinzhou = ('10.1.15.0/24',)
 
 
 
@@ -54,7 +55,7 @@ def funcscanner(args):
                 continue
             res = sock.recv(nb)
             #print (res)
-            ok_f = open("vlunthread.txt","a+")
+            ok_f = open("vlunthread-xinzhou.txt","a+")
             if res[68:70] != b"\x11\x03" or res[70:72] != b"\x02\x00":
                 print(f"{ip} Not vulnerable.")
                 ok_f.write(f"{ip} Not vulnerable."+"\n")
@@ -65,14 +66,17 @@ def funcscanner(args):
 
 
 
+
 subnetlist2 = ('10.9.2.1/16', '10.10.0.0/16', '10.11.0.0/16', '10.12.0.0/16', '10.13.0.0/16', '10.14.0.0/16', '10.15.0.0/16','10.16.0.0/16')
-funcsn = range(len(subnetlist))
+funcsn = range(len(subnetlistxinzhou))
 
 def main():
 
     threads = []
     for i in funcsn:
-        t = threading.Thread(target=funcscanner,args=(subnetlist[i],))
+        #使用过程中的方式。如果使用导入的类方式。比较利于
+        t = threading.Thread(target=funcscanner,args=(subnetlistxinzhou[i],))
+        #t = MyThread(funcscanner(subnetlistxinzhou[i]),(subnetlistxinzhou[i],),funcscanner().__name__)
         threads.append(t)
 
     for i in funcsn:
@@ -81,6 +85,7 @@ def main():
 
     for i in funcsn:
         threads[i].join()
+
 
 
 if __name__ == '__main__':
