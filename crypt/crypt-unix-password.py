@@ -113,7 +113,57 @@ def AesDecode():
     aesfrontText.delete(0.0, END)
     aesfrontText.insert(END, decrypted_text)
 
+'''
+python bytes和str转换
+原创大佬请带带我 最后发布于2019-03-21 14:19:04 阅读数 5980  收藏
+展开
+bytes 转换为 str
+str(b, encoding = "utf-8")  
 
+str(b, encoding = "gbk")  
+
+encoding中写的是原来byte变量的编码  什么类型的编码的字节就要转换成什么类型的编码的字符串
+
+通过
+
+import chardet
+ret = chardet.detect(变量)
+可以查看原有变量的编码类型enncoding
+
+或者通过decode解码，但是可能会出错。推荐如上
+
+string=b.decode() # 第一参数默认utf8，第二参数默认strict
+print(string)
+
+
+string=b.decode('utf-8','ignore') # 忽略非法字符，用strict会抛出异常
+print(string)
+
+
+string=b.decode('utf-8','replace') # 用？取代非法字符
+print(string)
+
+ 
+
+str 转换为 bytes
+
+b=bytes(str1, encoding='utf-8')
+print(b)
+
+
+b=str1.encode('utf-8')
+print(b)
+
+str没有decode方法，如果调用str.decode会报错
+
+AttributeError: 'str' object has no attribute 'decode'
+写爬虫时候，返回的response里中文乱码，根据原页面的<meta charset="gb2312">
+
+来修改编码为
+
+response.encoding = 'gb2312'
+
+'''
 
 
 
