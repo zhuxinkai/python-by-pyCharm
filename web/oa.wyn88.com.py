@@ -1,4 +1,6 @@
 import urllib2
+
+
 url ="http://www.huaqin.com"
 
 #body = urllib2.urlopen(url)
@@ -8,6 +10,7 @@ url ="http://www.huaqin.com"
 
 headers = {}
 headers['User-Agent'] = "Googlebot"
+print headers
 
 request = urllib2.Request(url,headers=headers)
 response = urllib2.urlopen(request)
