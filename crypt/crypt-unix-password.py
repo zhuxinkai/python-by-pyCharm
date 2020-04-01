@@ -183,6 +183,9 @@ window.title("各种加密算法测试软件")
 frame = Frame(window)
 frame.pack()
 
+
+
+
 label = Label(frame, text = "MD5加密前：")
 label.grid(row = 1, column = 1,columnspan= 4)
 
@@ -224,32 +227,54 @@ base642GenerateKey.grid(row = 5, column = 13,columnspan = 15)
 
 
 
+#增加一个可选菜单
+v = StringVar(window)
+v.set('AES加密模式')
 
 
+
+def printOption(event):
+    labelaesoption.config(text='你选择的加密方式是'+v.get())
+
+
+# 创建一个OptionMenu控件
+om = OptionMenu(window,
+                v,
+                'ECB',
+                'CBC',
+                'CTR',
+                'OFB',
+                'CFB',
+
+                )
+om.bind('<Button-1>', printOption)
+om.pack()
+labelaesoption = Label(frame, text = "    ")
+labelaesoption.grid(row = 6, column = 1,columnspan=4 )
 
 labelaes = Label(frame, text = "AES加密前：")
-labelaes.grid(row = 6, column = 1,columnspan=4 )
+labelaes.grid(row = 7, column = 1,columnspan=4 )
 
 aesfrontText = Text(frame,width=50,height=2)
-aesfrontText.grid(row = 7, column = 1,columnspan = 4)
+aesfrontText.grid(row = 8, column = 1,columnspan = 4)
 
 labelaes = Label(frame, text = "AES加密密钥：")
-labelaes.grid(row = 8 ,column = 1,columnspan= 4)
+labelaes.grid(row = 9 ,column = 1,columnspan= 4)
 
 cipherText = Text(frame,width=50,height=2)
-cipherText.grid(row = 9, column = 1,columnspan = 4)
+cipherText.grid(row = 10, column = 1,columnspan = 4)
 
 labelaes = Label(frame, text = "AES加密后：")
-labelaes.grid(row = 10,column = 1,columnspan= 4)
+labelaes.grid(row = 11,column = 1,columnspan= 4)
 
 aesbackText = Text(frame,width=50,height=2)
-aesbackText.grid(row = 11, column = 1,columnspan = 4)
+aesbackText.grid(row = 12, column = 1,columnspan = 4)
 
 aesGenerateKey = Button(frame, text = "AES加密",bg='yellow',fg='red',command=AesEncode)
-aesGenerateKey.grid(row = 12, column = 1,columnspan = 2)
+aesGenerateKey.grid(row = 13, column = 1,columnspan = 2)
 
 aesGenerateKey2 = Button(frame, text = "AES解密",bg='yellow',fg='red',command=AesDecode)
-aesGenerateKey2.grid(row = 12, column = 3,columnspan = 4)
+aesGenerateKey2.grid(row = 13, column = 3,columnspan = 4)
 
 
 
