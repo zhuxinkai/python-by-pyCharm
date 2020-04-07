@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>朱鑫凯个人用户登录（用于web学习发布）</title>
+    <link href="../djangonew/myapp/static/myapp/css/admin_login.css" rel="stylesheet" type="text/css" />
+    <!--
+    <script
+            src="https://code.jquery.com/jquery-1.12.4.js"
+            integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+            crossorigin="anonymous"></script>
+            -->
+    <!-- <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"> 使用国内的cdn进行下载-->
+    </script>
+    <script src="js/http_code.jquery.com_jquery-1.12.4.js"></script>  <!--使用相对路径 -->
+
+<script>
+    $(document).ready(function(){
+        $("input").focus(function(){
+            $(this).css("background-color","#aaaaaa");
+        });
+        $("input").blur(function(){
+            $(this).css("background-color","#ffffff");
+        });
+    });
+
+</script>
+
+  <script type="text/javascript">
+//这样写，可以让编辑器识别其中的编码方式。 获取正确的格式。
+// 正确的XMLHttpRequest 对象的初始化方式。
+      var xmlhttp;
+    function ajaxFunction() {
+        if (window.XMLHttpRequest)
+        {// code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp=new XMLHttpRequest();
+        }
+        else
+        {// code for IE6, IE5
+            xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+
+    }
+
+    function validUserAndPassword(obj) {
+        //创建XMLHttpRequest
+        ajaxFunction();
+        var url = "/VlidUser?username=" + obj.value;
+        //第一个参数是请求方式，第二个参数是请求地址，第三个参数是同步或者异步。 false 异步， true 同步。
+        xmlhttp.open("get", url, false);
+        // xmlhttp.open("GET",url,false);   如果是get请求，数据是在URL上传递，不需要发送数据。
+        //xmlhttp.setRequestHeader("context-type,text/html";"utf-8")        ;
+        xmlhttp.send(null);
+        xmlhttp.onreadystatechange = _callback();
+
+        //接受服务器的响应
+        // xmlhttp.onreadystatechange =_callback();
+
+
+    }
+
+
+
+
+
+
+
+
+    function _callback() {
+        //alert(xmlhttp.readyState);
+        //readyState ==4 请求完成。
+        if(xmlhttp.readyState == 4){
+            //readyState == 200 正常访问。
+            if(xmlhttp.status == 200){
+                var result = xmlhttp.responseText;
+
+
+                if(result == 'error'){
+                   // alert("success");
+                    document.getElementById('tip').innerHTML = '用户名不存在，非朱勇涵家人不能登录此系统';
+
+                    }else{
+                    document.getElementById('tip').innerHTML = '用户名存在，可以登录此系统！';
+
+                }
+
+
+            }
+        }
+
+    }
+
+
+
+  </script>
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+
+<div class="admin_login_wrap">
+    <h1>登录朱鑫凯家庭系统</h1>
+    <div class="adming_login_border">
+        <div class="admin_input">
+            <form action="/login_action/" method="post">
+                <ul class="admin_items">
+                    <li> <span id='tip'></span></li>
+                    <li>
+                        <label for="user">用户名：</label>
+                        <input type="text" name="username"  onblur="validUserAndPassword(this)" id="user" size="40" class="admin_input_style" />
+
+                    </li>
+
+                    <li>
+                        <label for="pwd">密码：</label>
+                        <input type="password" name="password" id="passwd" size="40" class="admin_input_style" />
+                        {{ error }} <br>
+                    </li>
+                    <li>
+                        <input type="submit" tabindex="3" value="提交" onclick="validUserAndPassword(this.find('input.pwd'))" class="btn btn-primary" />
+
+
+                    </li>
+                    <li>  <span id='passworderror'> </span> </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+    <p class="admin_copyright"> Powered by 朱鑫凯 <a href="http://beian.miit.gov.cn">粤ICP备19066509号</a></p>
+    {% csrf_token %}
+</div>
+</body>
+</html>
